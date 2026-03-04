@@ -65,6 +65,8 @@ line-height: 1.5;
     line-height: 1.8;
     color: #4b3b2a; 
     border-radius: 8px;
+    border-left: 4px solid #e0cfa3; 
+    border-right: 4px solid #e0cfa3;
 }
 .artikel .penulis {
     font-style: italic;
@@ -302,3 +304,4 @@ th {
     }
 
 }
+
