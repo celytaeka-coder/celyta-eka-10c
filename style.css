@@ -1,24 +1,79 @@
+
 body {
-background-color: rgb(253, 255, 255);
-font-family: Arial, sans-serif;
-color: #07040f;
-margin: 20px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fff8e1; /* cream lembut */
+    color: #5c3a21;
 }
+
+
+header {
+    text-align: center;
+    background-color: #d4b88b; /* coklat muda */
+    padding: 15px;
+    border-radius: 6px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 10px;
+    font-size: 16px;
+    color: #3E2723;
+}
+
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5c3a21;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive navbar untuk layar ≤ 600px */
+@media screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+
 h1 {
-background-color: #d4b88b;
-color: #3E2723;
-text-align: center;
-font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #d4b88b;
+    color: #3E2723;
+    font-family: 'Playfair Display', serif;
 }
+
 h2 {
-color: #010c18;
-text-align: left;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #010c18;
 }
+
 p {
-font-size: 18px;
-text-align: left;
-line-height: 1.5;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 18px;
+    line-height: 1.5;
 }
+
 
 .daftar-produk {
     display: grid;
@@ -52,10 +107,13 @@ line-height: 1.5;
     font-weight: bold;
     color: #27ae60;
 }
+
 .deskripsi {
     font-size: 14px;
     color: #555;
 }
+
+
 .artikel {
     max-width: 700px;
     margin: auto;
@@ -63,26 +121,27 @@ line-height: 1.5;
     background-color: #fff3db;
     font-family: 'Georgia', serif;
     line-height: 1.8;
-    color: #4b3b2a; 
+    color: #4b3b2a;
     border-radius: 8px;
-    border-left: 4px solid #e0cfa3; 
-    border-right: 4px solid #e0cfa3; 
+    border-left: 4px solid #e0cfa3;
+    border-right: 4px solid #e0cfa3;
 }
+
 .artikel .penulis {
     font-style: italic;
     color: #666;
     margin-bottom: 20px;
 }
+
 .artikel .sampul {
     width: 180px;
     float: right;
     margin: 0 0 20px 20px;
     border: 1px solid #ccc;
     box-shadow: 3px 3px 8px rgba(190, 150, 100, 0.4);
-
-
 }
-.artikel blockquote{
+
+.artikel blockquote {
     font-style: italic;
     padding-left: 20px;
     margin: 20px 0;
@@ -90,93 +149,10 @@ line-height: 1.5;
     color: #5a4632;
     background-color: #ede3d7;
 }
-.btn-kembali {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 10px 16px;
-    background-color: #333333;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-}
-.kembali-wrap {
-    text-align: center;
-    margin-top: 30px;
-    clear: both; 
-}
 
-.btn-kembali:hover {
-    background-color: #555555;
-}
 
 .formulir {
     max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background-color: #fafafa;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-form input, form select, form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-form button {
-    background-color: #333333;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-form button:hover {
-    background-color:  #555555;
-}    
-
-body {
-  margin: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #fff8e1; 
-    color: #5c3a21; 
-}
-
-
-h2 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-
-p {
-    text-align: center;
-    margin: 5px 0;
-}
-
-
-hr {
-    border: 1px solid #cccccc;
-    width: 80%;
-    margin: 20px auto;
-}
-
-
-.formulir {
-    width: 400px;
-    max-width: 90%;
     margin: 20px auto;
     padding: 15px;
     background-color: #fff3dbf9;
@@ -184,15 +160,13 @@ hr {
     border-radius: 6px;
 }
 
-
 form label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
 }
 
-
-form input, form textarea {
+form input, form select, form textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -200,7 +174,6 @@ form input, form textarea {
     border: 1px solid #cccccc;
     box-sizing: border-box;
 }
-
 
 form button {
     margin-top: 15px;
@@ -219,51 +192,11 @@ form button:hover {
 }
 
 
-
-nav {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #5c3a21;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-
-hr {
-    border: 1px solid #d4b88b; /* coklat muda */
-    width: 80%;
-    margin: 20px auto;
-}
-.event {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #fff3db; /* cream sedikit lebih terang */
-    border: 1px solid #e0cfa3;
-    border-radius: 6px;
-}
-
-
-.promo {
+.event, .promo {
     max-width: 600px;
     margin: 20px auto 40px auto;
     padding: 15px;
-    background-color: #fff3db; /* cream */
+    background-color: #fff3db;
     border: 1px solid #e0cfa3;
     border-radius: 6px;
 }
@@ -276,18 +209,18 @@ table {
 }
 
 th, td {
-    border: 1px solid #d4b88b; /* coklat muda */
+    border: 1px solid #d4b88b;
     padding: 8px;
     text-align: center;
 }
 
 th {
-    background-color: #ffe8b0; /* cream agak terang */
+    background-color: #ffe8b0;
 }
 
 
 @media (max-width: 650px) {
-    .event, .promo {
+    .daftar-produk, .event, .promo {
         width: 90%;
         padding: 10px;
     }
@@ -295,13 +228,23 @@ th {
     table th, table td {
         padding: 6px;
     }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
 }
-footer{
+
+footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    width: 100%;
     padding: 10px 20px;
+    background-color: #fff3db;
     color: #5c3a21;
+    text-align: center;
 }
-
-
