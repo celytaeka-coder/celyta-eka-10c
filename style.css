@@ -6,6 +6,10 @@ body {
     color: #5c3a21;
 }
 
+body main, body h1, body h2 {
+    margin-top: 20px;
+}
+
 
 header {
     text-align: center;
@@ -44,7 +48,8 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #d4b88b;
+    transition: 0.3s ease;
 }
 
 /* Responsive navbar untuk layar ≤ 600px */
