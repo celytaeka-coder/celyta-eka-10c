@@ -64,14 +64,15 @@ p {
 
 /* --- Header --- */
 header {
-    position: relative; /* penting untuk overlay */
+    position: relative;
     text-align: center;
     background-image: url('pexels-nguyendesigner-244134.jpg');
     background-size: cover;
     background-position: center;
-    padding: 60px 20px; /* tinggi header sedang */
-    color: #fff8e1;     /* teks cream terang */
+    padding: 60px 20px; /* tinggi header */
+    color: #fff8e1;
     border-radius: 6px;
+    margin-bottom: 40px; /* <--- tambahkan ini */
 }
 
 header::before {
