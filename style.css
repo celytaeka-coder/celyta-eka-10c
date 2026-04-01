@@ -28,6 +28,11 @@ header p {
 nav {
     text-align: center;
     margin-top: 10px;
+    position: sticky; /* bikin navbar lengket */
+    top: 0;           /* tetap di atas saat scroll */
+    background-color: #fff8e1;
+    padding: 10px 0;
+    z-index: 1000;    /* agar selalu di atas konten lain */
 }
 
 nav a {
