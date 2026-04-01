@@ -30,19 +30,26 @@ scale=1.0">
 <main class="formulir">
     <h2>Form Kontak</h2>
     <form id="formTestimoni">
-        <label form="nama">Nama:</label>
+        <label for="nama">Nama:</label>
         <input type="text" id="nama" name="nama" required placeholder="Nama lengkap">
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required placeholder="email@example.com">
 
-        <label>No. HP / WhatsApp:</label><br>
-        <input type="text" name="hp" required placeholder="0821****">
+       <label for="hp">No. HP / WhatsApp:</label>
+       <input type="text" id="hp" name="hp" required placeholder="0821****">
 
     
         
         <button type="submit">Kirim Pesan</button>
     </form>
+     <script>
+    document.getElementById('formTestimoni').addEventListener('submit', function(e) {
+        e.preventDefault(); // mencegah reload halaman
+        alert('Pesan berhasil dikirim! (simulasi)');
+        this.reset(); // reset form
+    });
+    </script>
 </main>
 <footer>
     <p>&copy; 2026 Celyta Corner</p>
