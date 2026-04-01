@@ -249,12 +249,11 @@ th {
 }
 
 footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 20px;
-    background-color: #fff3db;
-    color: #5c3a21;
-    text-align: center;
+    position: relative;  /* bukan fixed, jadi tidak menutupi konten */
+    text-align: left;    /* tulisan di kiri */
+    padding: 10px 20px;  /* jarak dari tepi */
+    background: none;    /* hilangkan kotak/warna background */
+    color: #5c3a21;      /* warna teks */
+    font-size: 14px;     /* ukuran teks sedikit lebih kecil */
+    margin-top: 20px;    /* beri jarak dari konten */
 }
